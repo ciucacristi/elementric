@@ -2,6 +2,7 @@
 
 Elementric is a free, open source, front-end package of UI elements that can help you create the look of a web page easily. The elements have a modern design composed of buttons, cards, menus and many others created from scratch only with HTML5, CSS and JS. Elementric can be used by any type of developers, being easy to install and use.
 
+**[Explore elements](https://ciucacristi.github.io/elementric/buttons.html)**
 
 ## Installation
 
