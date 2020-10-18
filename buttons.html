@@ -1,0 +1,361 @@
+<!--
+Elementric - Web UI Components
+Author: © Ciuca Cristian
+Author URL: https://www.ciucacristi.tk/
+Version: 0.1 Beta
+Demo: ciucacristi.github.io/elementric
+License: MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Elementric/css/elementric.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism-tomorrow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <title>Buttons | Elementric - Web UI Components</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.svg" class="logo" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navigationBar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="buttons.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="introduction.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="changelog.html">Changelog</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-link">v0.1</li>
+          </ul>
+
+            <div class="socials">
+              <a href="https://github.com/ciucacristi/elementric"><i class="fab fa-github"></i></a>
+              <a href="https://discord.gg/GvVQvRj"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+      </div>
+  </nav>
+  <!-- END Navbar -->
+
+  <!-- Left Sidebar -->
+
+  <button class="home-button-light open-sidebar" onclick="openNav()"><svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+ </svg></button>
+
+ <div class="container-full" id="introduction">
+
+  <div class="sidebar">
+    <button class="home-button-light close-sidebar" onclick="closeNav()"><svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+     <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+   </svg></button>
+
+    <ul class="sidebar-menu">
+      <li class="menu-title"><a href="introduction.html">Getting Started</a></li>
+        <li class="menu-link"><a href="introduction.html">Introduction</a></li>
+        <li class="menu-link"><a href="installation.html">Installation</a></li>
+
+      <li class="menu-title"><a href="buttons.html">Components</a></li>
+        <li class="menu-link active"><a href="buttons.html">Buttons</a></li>
+        <li class="menu-link"><a href="alerts.html">Alerts</a></li>
+        <li class="menu-link"><a href="input.html">Input</a></li>
+        <li class="menu-link"><a href="dropdown.html">Dropdown</a></li>
+        <li class="menu-link"><a href="navbar.html">Navbar</a></li>
+        <li class="menu-link"><a href="sidebar.html">Sidebar</a></li>
+        <li class="menu-link"><a href="badge.html">Badge</a></li>
+        <li class="menu-link"><a href="card.html">Card</a></li>
+        <li class="menu-link"><a href="tooltips.html">Tooltips</a></li>
+        <li class="menu-link"><a href="testimonials.html">Testimonials</a></li>
+        <li class="menu-link"><a href="pricing-tables.html">Pricing Tables</a></li>
+
+      <li class="menu-title"><a href="sizing.html">Other</a></li>
+        <li class="menu-link"><a href="sizing.html">Sizing</a></li>
+        <li class="menu-link"><a href="spacing.html">Spacing</a></li>
+        <li class="menu-link"><a href="fonts.html">Fonts</a></li>
+        <li class="menu-link"><a href="icons.html">Icons</a></li>
+
+    </ul>
+  </div>
+
+  <!-- End Left Sidebar -->
+
+  <!-- Right Nav -->
+
+<nav class="right-nav" id="right-nav">
+  <ul>
+      <li><a href="#default">Default</a></li>
+      <li><a href="#outline">Outline</a></li>
+      <li><a href="#square">Square</a></li>
+      <li><a href="#square-outline">Square Outline</a></li>
+      <li><a href="#icon">Icon</a></li>
+      <li><a href="#circle">Circle</a></li>
+      <li><a href="#gradient">Gradient</a></li>
+      <li><a href="#sizing">Sizing</a></li>
+  </ul>
+</nav>
+<!-- End Right Nav -->
+
+<!-- Content -->
+  <div class="container-full content">
+    <p class="docs-main-title">Buttons</p>
+    <p class="subtitle">Elementric components - just copy the HTML code of an element and paste it into your code
+       (after you read the <a href="installation.html">installation</a> guide).</p>
+
+       <p class="docs-title">Types</p>
+       <p class="subtitle">Below you can find several types of buttons that can be used by copying the HTML code.
+         They differ only by the class (<mark>.button-standard</mark>, <mark>.button-light</mark>, etc...)</p>
+
+        <!-- Default Buttons -->
+         <p class="docs-title mb-4" id="default">Default</p>
+         <button type="button" class="button-link ml-0 mr-4 mt-2">Button Link</button>
+         <button type="button" class="button-standard mr-4 mt-2">Standard</button>
+         <button type="button" class="button-light mr-4 mt-2">Light</button>
+         <button type="button" class="button-dark mr-4 mt-2">Dark</button>
+         <button type="button" class="button-success mr-4 mt-2">Success</button>
+         <button type="button" class="button-danger mr-4 mt-2">Danger</button>
+         <button type="button" class="button-warning mr-4 mt-2">Warning</button>
+
+         <pre class="col-lg-9 mt-5 ml-0">
+           <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-default-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+           <code class="language-html" id="code-default-btns">
+  &lt;button type="button" class="button-link"&gt;Button Link&lt;/button&gt;
+  &lt;button type="button" class="button-standard"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-light"&gt;Light&lt;/button&gt;
+  &lt;button type="button" class="button-dark"&gt;Dark&lt;/button&gt;
+  &lt;button type="button" class="button-success"&gt;Success&lt;/button&gt;
+  &lt;button type="button" class="button-danger"&gt;Danger&lt;/button&gt;
+  &lt;button type="button" class="button-warning"&gt;Warning&lt;/button&gt;
+           </code>
+         </pre>
+
+         <!-- End Default Buttons -->
+
+       <!-- Outline Buttons -->
+         <p class="docs-title mb-4" id="outline">Outline</p>
+         <button type="button" class="button-outline-standard ml-0 mr-4 mt-2">Standard</button>
+         <button type="button" class="button-outline-light mr-4 mt-2">Light</button>
+         <button type="button" class="button-outline-dark mr-4 mt-2">Dark</button>
+         <button type="button" class="button-outline-success mr-4 mt-2">Success</button>
+         <button type="button" class="button-outline-danger mr-4 mt-2">Danger</button>
+         <button type="button" class="button-outline-warning mr-4 mt-2">Warning</button>
+
+         <pre class="col-lg-9 mt-5 ml-0">
+           <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-outline-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+           <code class="language-html" id="code-outline-btns">
+  &lt;button type="button" class="button-outline-standard"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-outline-light"&gt;Light&lt;/button&gt;
+  &lt;button type="button" class="button-outline-dark"&gt;Dark&lt;/button&gt;
+  &lt;button type="button" class="button-outline-success"&gt;Success&lt;/button&gt;
+  &lt;button type="button" class="button-outline-danger"&gt;Danger&lt;/button&gt;
+  &lt;button type="button" class="button-outline-warning"&gt;Warning&lt;/button&gt;
+           </code>
+         </pre>
+       <!-- End Outline Buttons -->
+
+
+       <!-- Square Buttons -->
+         <p class="docs-title mb-4" id="square">Square</p>
+         <p class="subtitle">If you want to make any button a square one, add the class <mark>.square</mark></p>
+
+           <button type="button" class="button-standard square ml-0 mr-4 mt-2">Standard</button>
+           <button type="button" class="button-light square mr-4 mt-2">Light</button>
+           <button type="button" class="button-dark square mr-4 mt-2">Dark</button>
+           <button type="button" class="button-success square mr-4 mt-2">Success</button>
+           <button type="button" class="button-danger square mr-4 mt-2">Danger</button>
+           <button type="button" class="button-warning square mr-4 mt-2">Warning</button>
+
+           <pre class="col-lg-9 mt-5 ml-0">
+             <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-square-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+             <code class="language-html" id="code-square-btns">
+  &lt;button type="button" class="button-standard square"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-light square"&gt;Light&lt;/button&gt;
+  &lt;button type="button" class="button-dark square"&gt;Dark&lt;/button&gt;
+  &lt;button type="button" class="button-success square"&gt;Success&lt;/button&gt;
+  &lt;button type="button" class="button-danger square"&gt;Danger&lt;/button&gt;
+  &lt;button type="button" class="button-warning square"&gt;Warning&lt;/button&gt;
+             </code>
+           </pre>
+         <!-- End Square Buttons -->
+
+
+         <!-- Square Outline Buttons -->
+           <p class="docs-title mb-4" id="square-outline">Square Outline</p>
+           <p class="subtitle">If you want to make any button a square one, add the class <mark>.square</mark></p>
+
+             <button type="button" class="button-outline-standard square ml-0 mr-4 mt-2">Standard</button>
+             <button type="button" class="button-outline-light square mr-4 mt-2">Light</button>
+             <button type="button" class="button-outline-dark square mr-4 mt-2">Dark</button>
+             <button type="button" class="button-outline-success square mr-4 mt-2">Success</button>
+             <button type="button" class="button-outline-danger square mr-4 mt-2">Danger</button>
+             <button type="button" class="button-outline-warning square mr-4 mt-2">Warning</button>
+
+             <pre class="col-lg-9 mt-5 ml-0">
+               <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-squareout-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+               <code class="language-html" id="code-squareout-btns">
+  &lt;button type="button" class="button-outline-standard square"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-outline-light square"&gt;Light&lt;/button&gt;
+  &lt;button type="button" class="button-outline-dark square"&gt;Dark&lt;/button&gt;
+  &lt;button type="button" class="button-outline-success square"&gt;Success&lt;/button&gt;
+  &lt;button type="button" class="button-outline-danger square"&gt;Danger&lt;/button&gt;
+  &lt;button type="button" class="button-outline-warning square"&gt;Warning&lt;/button&gt;
+               </code>
+             </pre>
+           <!-- Square Outline Buttons -->
+
+           <!-- Icon Buttons -->
+             <p class="docs-title mb-4" id="icon">Icon</p>
+             <p class="subtitle">The icons used are from <a href="">FontAwesome Icons</a>.</p>
+             <p class="subtitle"><a href="">Learn more</a> about usage</p>
+
+             <button type="button" class="button-icon ml-0 mr-4 mt-2"><i class="fas fa-home"></i></button>
+             <button type="button" class="button-icon ml-0 mr-4 mt-2"><i class="fas fa-bars"></i></button>
+
+             <pre class="col-lg-9 mt-5 ml-0">
+               <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-icon-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+               <code class="language-html" id="code-icon-btns">
+  &lt;button type="button" class="button-icon"&gt; &lt;i class="fas fa-home"&gt;&lt;/i&gt; &lt;/button&gt;
+  &lt;button type="button" class="button-icon"&gt; &lt;i class="fas fa-bars"&gt;&lt;/i&gt; &lt;/button&gt;
+               </code>
+             </pre>
+           <!-- End Icon Buttons -->
+
+           <!-- Circle Buttons -->
+             <p class="docs-title mb-4" id="circle">Circle</p>
+             <p class="subtitle">If you want to make any button a round one, add the class <mark>.circle</mark></p>
+
+            <button type="button" class="button-standard circle ml-0 mr-4 mt-2">Standard</button>
+            <button type="button" class="button-standard circle ml-0 mr-4 mt-2"><i class="fas fa-home"></i></button>
+            <button type="button" class="button-light circle ml-0 mr-4 mt-2"><i class="fas fa-bars"></i></button>
+
+            <pre class="col-lg-9 mt-5 ml-0">
+              <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-circle-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+              <code class="language-html" id="code-circle-btns">
+  &lt;button type="button" class="button-standard circle"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-standard circle"&gt; &lt;i class="fas fa-home"&gt;&lt;/i&gt; &lt;/button&gt;
+  &lt;button type="button" class="button-light circle"&gt; &lt;i class="fas fa-bars"&gt;&lt;/i&gt; &lt;/button&gt;
+              </code>
+            </pre>
+          <!-- Circle Buttons -->
+
+          <!-- Gradient Buttons -->
+            <p class="docs-title mb-4" id="gradient">Gradient</p>
+              <button type="button" class="button-gradient-standard ml-0 mr-4 mt-2">Standard</button>
+              <button type="button" class="button-gradient-light mr-4 mt-2">Light</button>
+              <button type="button" class="button-gradient-dark mr-4 mt-2">Dark</button>
+              <button type="button" class="button-gradient-success mr-4 mt-2">Success</button>
+              <button type="button" class="button-gradient-danger mr-4 mt-2">Danger</button>
+              <button type="button" class="button-gradient-warning mr-4 mt-2">Warning</button>
+
+            <pre class="col-lg-9 mt-5 ml-0">
+              <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-gradient-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+              <code class="language-html" id="code-gradient-btns">
+  &lt;button type="button" class="button-gradient-standard"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-gradient-light"&gt;Light&lt;/button&gt;
+  &lt;button type="button" class="button-gradient-dark"&gt;Dark&lt;/button&gt;
+  &lt;button type="button" class="button-gradient-success"&gt;Success&lt;/button&gt;
+  &lt;button type="button" class="button-gradient-danger"&gt;Danger&lt;/button&gt;
+  &lt;button type="button" class="button-gradient-warning"&gt;Warning&lt;/button&gt;
+              </code>
+            </pre>
+          <!-- End Circle Buttons -->
+
+          <!-- Sizing Buttons -->
+          <p class="docs-title mb-4" id="sizing">Sizing</p>
+            <p class="subtitle">Just add a sizing class to your button to change the size. (<mark>.button-sm</mark>, <mark>.button-md</mark>, <mark>.button-lg</mark>, <mark>.button-xlg</mark>)</p>
+
+          <button type="button" class="button-standard button-sm ml-0 mr-4 mt-2">button-sm</button>
+          <button type="button" class="button-standard button-md ml-0 mr-4 mt-2">button-md</button>
+          <button type="button" class="button-standard ml-0 mr-4 mt-2">Standard</button>
+          <button type="button" class="button-standard button-lg ml-0 mr-4 mt-2">button-lg</button>
+          <button type="button" class="button-standard button-xlg ml-0 mr-4 mt-2">button-xlg</button>
+
+          <pre class="col-lg-9 mt-5 ml-0">
+            <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-sizing-btns')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+            <code class="language-html" id="code-sizing-btns">
+  &lt;button type="button" class="button-standard button-sm"&gt;button-sm&lt;/button&gt;
+  &lt;button type="button" class="button-standard button-md"&gt;button-md&lt;/button&gt;
+  &lt;button type="button" class="button-standard"&gt;Standard&lt;/button&gt;
+  &lt;button type="button" class="button-standard button-lg"&gt;button-lg&lt;/button&gt;
+  &lt;button type="button" class="button-standard button-xlg"&gt;button-xlg&lt;/button&gt;
+            </code>
+          </pre>
+          <!-- Sizing Buttons -->
+
+   </div>
+
+</div>
+
+<!-- End Content -->
+
+<!-- Footer -->
+  <div class="footer" id="docs-footer">
+
+   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center text-lg-left">
+        <p class="footer-logo"><img src="images/logo.svg" alt="logo"> Elementric</p>
+      </div>
+
+      <div class="col-lg-6 ml-auto text-center text-lg-right align-self-center">
+        <a href="https://github.com/ciucacristi/elementric" class="mr-4">GitHub</a>
+        <a href="changelog.html" class="mr-4">Changelog</a>
+        <a href="https://github.com/ciucacristi/elementric/issues" class="mr-4">Issues</a>
+      </div>
+     </div>
+
+    <hr>
+
+    <div class="copyright">
+      <div class="row">
+        <div class="col-lg-3 text-center text-lg-left">
+          <p>Copyright © 2020 Elementric</p>
+        </div>
+        <div class="col-lg-3 text-center mx-auto">
+          <p><a href="https://github.com/ciucacristi/elementric/blob/master/LICENSE">MIT License</a></p>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <p>Made by <a href="https://www.ciucacristi.tk/">Ciuca Cristian</a></p>
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+  </div>
+
+<!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <script src="Elementric/js/elementric.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  </body>
+</html>

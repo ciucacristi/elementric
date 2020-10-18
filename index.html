@@ -1,0 +1,295 @@
+<!--
+Elementric - Web UI Components
+Author: © Ciuca Cristian
+Author URL: https://www.ciucacristi.tk/
+Version: 0.1 Beta
+Demo: ciucacristi.github.io/elementric
+License: MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Elementric/css/elementric.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism-tomorrow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <title>Elementric - Web UI Components</title>
+  </head>
+
+  <body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" class="logo" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navigationBar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buttons.html">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduction.html">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="changelog.html">Changelog</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-link">v0.1</li>
+        </ul>
+
+          <div class="socials">
+            <a href="https://github.com/ciucacristi/elementric"><i class="fab fa-github"></i></a>
+            <a href="https://discord.gg/GvVQvRj"><i class="fab fa-discord"></i></a>
+          </div>
+      </div>
+
+    </div>
+</nav>
+<!-- END Navbar -->
+
+<!-- Main Home -->
+  <div class="container" id="home">
+    <div class="col-lg-12 main-box ">
+      <img src="images/alt-logo.svg" alt="logo" class="main-logo">
+
+      <p class="main-name">Elementric</p>
+      <p class="main-description">Make your web looks awesome</p>
+
+      <button type="button" onclick="location.href='introduction.html';" class="home-button-light mr-4">Get Started</button>
+
+      <button type="button" onclick="location.href='installation.html';" class="home-button-light">Download</button>
+
+      <div class="row justify-content-center">
+        <p class="main-p mr-5">Version v0.1 Beta</p>
+        <p class="main-p"><a href="https://github.com/ciucacristi/elementric"><i class="fab fa-github"></i> GitHub</a></p>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Main Home -->
+
+
+  <!-- Installation -->
+  <div class="container" id="install">
+    <i class="fas fa-code"></i>
+    <p class="home-title">Manual installation with CSS and JS files</p>
+    <p class="home-description">To use the <strong>Elementric</strong> components,
+       you need to add the <strong>CSS</strong> and <strong>JS</strong> files to your project. You can
+       do this by <br> downloading the Elementric files and adding the below links in your HTML code:</p>
+
+     <button type="button" onclick="location.href='installation.html';" class="btn btn-link">See Documentation <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+    </svg></button>
+
+    <pre>
+      <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-css')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+      <code class="language-html" id="code-css">
+  &lt;link rel="stylesheet" href="css/elementric.css"&gt; &lt;!-- CSS --&gt;
+      </code>
+    </pre>
+
+    <pre>
+      <div class="position-absolute clipboard"><button onclick="copyToClipboard('#code-js')" class="clipboard-btn" data-toggle="tooltip" data-placement="top" trigger="click" title="Copied">Copy</button></div>
+      <code class="language-html" id="code-js">
+  &lt;script src="js/elementric.js"&gt;&lt;/script&gt; &lt;!-- JavaScript --&gt;
+      </code>
+    </pre>
+
+  </div>
+
+  <!-- End Installation -->
+
+
+  <!-- Explore -->
+    <div class="container" id="explore">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+          <div class="example-card">
+            <div class="circular-img mx-auto">
+              <img src="https://images.pexels.com/photos/2078265/pexels-photo-2078265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img">
+            </div>
+
+            <p class="member-name">John Doe</p>
+            <p class="member-info">New York, U.S.A</p>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <p class="home-title">Meet UI Components</p>
+          <p class="home-description">Use the Elementric components for a great user interface for your website. Meet elements with a modern
+          and fresh design, buttons, cards, alerts and a lot of other UI components.</p>
+
+          <button type="button" onclick="location.href='buttons.html';" class="button-standard mt-2 ml-3">Explore</button>
+
+        </div>
+
+      </div>
+
+    </div>
+  <!-- End Explore -->
+
+  <!-- Features  -->
+
+    <div class="container" id="features">
+
+      <p class="home-title">Features</p>
+      <p class="home-description">Learn more about what Elementric can do. Elementric is a UI package that can help you<br> build fast and beautiful
+        web pages with easy installation and simple usage<br> of elements in your project with a simple copy and paste html code.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="feature-card">
+                    <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-menu-app" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2zM14 7H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM2 6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H2z"/>
+            <path fill-rule="evenodd" d="M15 11H1v-1h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <p class="feature-title">Modern UI</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card mt-5">
+                    <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-sliders" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM7 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM4.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9.5 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            <path fill-rule="evenodd" d="M9.5 4H0V3h9.5v1zM16 4h-2.5V3H16v1zM9.5 14H0v-1h9.5v1zm6.5 0h-2.5v-1H16v1zM6.5 9H16V8H6.5v1zM0 9h2.5V8H0v1z"/>
+          </svg>
+          <p class="feature-title">Easy installation</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card">
+                      <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+            <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            <p class="feature-title">Mobile Friendly</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card">
+          <i class="fab fa-github-alt"></i>
+          <p class="feature-title">Open Source</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card mt-5">
+                    <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-columns-gap" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M6 1H1v3h5V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12h-5v3h5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8H1v7h5V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6h-5v7h5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+          </svg>
+          <p class="feature-title">50+ UI Elements</p>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="feature-card">
+          <i class="fab fa-js"></i>
+          <p class="feature-title">HTML5, CSS3, JS</p>
+
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  <!-- End Features  -->
+
+  <!-- Donation -->
+    <div class="container" id="donation">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="donation-card">
+              <i class="fab fa-paypal"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-7 pt-3 pl-5">
+            <p class="home-title">Help us to grow</p>
+            <p class="home-description">Donate how much you want to help us to evolve better and faster.
+              Every donation helps us to do better things with this product.
+              You can help us to promote the product or paying for a better hosting and domain.
+            </p>
+            <button type="button" class="button-standard ml-3 mt-2"><i class="fab fa-paypal"></i> PayPal</button>
+          </div>
+        </div>
+    </div>
+
+  <!-- End Donation -->
+
+
+  <!-- Footer -->
+    <div class="footer">
+
+     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center text-lg-left">
+          <p class="footer-logo"><img src="images/logo.svg" alt="logo"> Elementric</p>
+        </div>
+
+        <div class="col-lg-6 ml-auto text-center text-lg-right align-self-center">
+          <a href="https://github.com/ciucacristi/elementric" class="mr-4">GitHub</a>
+          <a href="changelog.html" class="mr-4">Changelog</a>
+          <a href="https://github.com/ciucacristi/elementric/issues" class="mr-4">Issues</a>
+        </div>
+       </div>
+
+      <hr>
+
+      <div class="copyright">
+        <div class="row">
+          <div class="col-lg-3 text-center text-lg-left">
+            <p>Copyright © 2020 Elementric</p>
+          </div>
+          <div class="col-lg-3 text-center mx-auto">
+            <p><a href="https://github.com/ciucacristi/elementric/blob/master/LICENSE">MIT License</a></p>
+          </div>
+
+          <div class="col-lg-3 text-center">
+            <p>Made by <a href="https://www.ciucacristi.tk/">Ciuca Cristian</a></p>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+    </div>
+
+  <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <script src="Elementric/js/elementric.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,678 @@
+/*
+Elementric - Web UI Components
+Author: © Ciuca Cristian
+Author URL: https://www.ciucacristi.tk/
+Version: 0.1 Beta
+Demo: https://www.ciucacristi.github.io/elementric
+License: MIT License
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body, html * {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body a:hover {
+  color: #225bf0;
+  text-decoration: none;
+}
+
+body a {
+  color: #000;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+
+ul {
+	list-style: none;
+}
+
+strong {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+mark {
+  font-family: 'Segoe UI', sans-serif;
+  color: red;
+  background-color: #f7f5f5 !important;
+}
+
+/* Navbar */
+.navbar-light {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+  transition: 500ms ease;
+  background: transparent !important;
+}
+
+/* Navbar Logo */
+.logo {
+  width: 4rem;
+  height: 4rem;
+  transition: 500ms ease;
+}
+
+/* Links from Navbar */
+.navbar-light .nav-link {
+  font-size: 0.9rem;
+  color: #647c9a !important;
+  margin-right: 2.5rem;
+}
+
+/* Active link color in Navbar */
+.navbar-light .active {
+  color: #225bf0 !important;
+}
+
+/* Links color hover in Navbar */
+.navbar-light .nav-link:hover {
+  color: #000 !important;
+}
+
+/* Add shrink class on scrolling Navbar */
+.navbar-light.shrink {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Links color on scroll Navbar */
+.navbar-light.shrink .nav-link {
+  color: #647c9a !important;
+}
+
+/* Active link color in Navbar scrolled */
+.navbar-light.shrink .active {
+  color: #225bf0 !important;
+}
+
+/* Hover links color on scroll Navbar */
+.navbar-light.shrink .nav-link:hover {
+  color: #000 !important;
+}
+
+/* Logo on scroll Navbar */
+.navbar-light.shrink .logo {
+  width: 3rem;
+  height: 3rem;
+  transition: 500ms ease;
+}
+
+/* Navigation Menu on Small Screen */
+.collapse {
+  transition: 0.2s;
+  padding-left: 2rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 991px) {
+  .navbar-light {
+    background-color: #fff !important;
+  }
+
+  .collapse {
+    background-color: #fff;
+  }
+
+  .collapse .nav-link {
+    color: #2f4c7d !important;
+  }
+
+  .navbar-light .navbar-brand {
+    color: #41465c !important;
+  }
+}
+/* Responsive Media Queries */
+@media screen and (max-width: 475px) {
+  .navbar-light {
+    padding-left: 2rem;
+  }
+}
+
+.dropdown-menu {
+  background-color: #fff !important;
+  border-radius: 1rem !important;
+  border: none !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 5px 20px 0px rgba(0, 0, 0, 0.09);
+  font-size: 0.9rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: none !important;
+  color: blue;
+}
+
+.socials {
+  word-spacing: 1rem;
+  font-size: 1.1rem;
+}
+/* End Navbar */
+
+/* MAIN HOME */
+
+#home {
+  height: 100vh;
+}
+
+.main-box {
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-logo {
+  width: 7rem;
+  height: 7rem;
+  background-color: #000;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  background: linear-gradient(332deg, #000000, #ff4b4b, #1e60e4, #e41ecb, #f2d912);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  -o-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+.main-name {
+  font-size: 5rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+
+.main-description {
+  margin: 2rem;
+}
+
+.home-button-light {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+}
+
+.home-button-light:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 5px 20px 0px rgba(0, 0, 0, 0.03);
+}
+
+.main-p {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 475px) {
+  .main-name {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-height: 690px) {
+  .main-box {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+/* END MAIN HOME */
+
+/* Installation */
+#install {
+  text-align: center;
+}
+
+#install .fas {
+  font-size: 1.8rem;
+  background-color: #333333;
+  padding: 1.4rem;
+  color: #fff;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin: 1rem;
+  font-weight: 700;
+  color: #28394a;
+}
+
+.home-description {
+  line-height: 2rem;
+  margin: 1rem;
+  color: #5b718c;
+  font-size: 0.9rem;
+}
+
+pre {
+  border-radius: 1rem;
+  margin: 4rem !important;
+  font-size: 0.9rem !important;
+}
+
+.clipboard-btn {
+  background: none;
+  color: #757575;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.clipboard-btn:hover {
+  color: #225bf0;
+}
+
+.clipboard {
+  margin-top: -1rem;
+  margin-left: 1rem;
+ }
+/* End Installation */
+
+/* Explore */
+
+#explore {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
+.example-card {
+  width: 90%;
+  padding: 4rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  margin: 1rem;
+  box-shadow: 0px 2px 60px -15px #ccc;
+  text-align: center;
+  transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.circular-img {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular-img img {
+  width: auto;
+  height: 100%;
+  margin-left: -20px;
+}
+
+.member-name {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.member-info {
+  color: #9c9c9c;
+  font-size: 0.9rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.example-card a {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* End Explore */
+
+/* Features */
+
+#features {
+   padding: 4rem;
+   text-align: center;
+}
+
+#features .title {
+  font-size: 3.5rem;
+}
+
+.feature-card {
+  box-shadow: 5px 10px 60px -20px #CCCCCC;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+
+.feature-card .fab, .fas {
+  font-size: 2.5rem;
+}
+
+.feature-title {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+#features .row {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 991px){ /* Responsive Media Queries */
+ .feature-card {
+   margin-top: 3rem;
+ }
+
+}
+
+/* End Features */
+
+/* Donation */
+
+#donation {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.donation-card {
+  padding: 7rem 7rem 7rem 7rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 5px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.donation-card .fab {
+  font-size: 5rem;
+  color: #4779fc;
+}
+
+/* End Donation */
+
+/* Footer */
+
+.footer {
+  background-color: #fbfbfb;
+  padding: 1rem;
+  padding-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+}
+
+/* End Footer */
+
+/* ----------------- DOCS ----------------- */
+
+.sidebar {
+  width: 17rem;
+  padding-top: 2rem;
+  padding-right: 5rem;
+  background-color: #fff;
+  position: fixed !important;
+  bottom: 0;
+  float: left;
+  height: 90%;
+  overflow-y: auto;
+  z-index: 1000;
+  border-right: 1px solid #edebeb;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.menu-link {
+  margin-top: 0.5rem;
+}
+
+.menu-title {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.menu-title a {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #626262;
+}
+
+.menu-link a {
+  font-size: 0.9rem;
+  color: #647c9a;
+}
+
+.sidebar-menu a:hover {
+  color: #000;
+}
+
+.sidebar-menu li {
+  padding-left: 3rem;
+}
+
+.sidebar-menu .active a {
+  color: #000;
+  font-weight: 700;
+}
+
+.open-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 8%;
+  display: none;
+  transform: translate(-50%, -10%);
+  z-index: 200;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  border-radius: 5rem;
+}
+
+.close-sidebar {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  margin-top: 2rem;
+  border-radius: 5rem;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .open-sidebar {
+    display: block;
+  }
+
+  .content {
+    margin-left: 0rem !important;
+    padding: 2rem !important;
+  }
+
+  #docs-footer {
+    margin-left: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .right-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .open-sidebar {
+    display: none !important;
+  }
+
+  .close-sidebar {
+    display: none !important;
+  }
+
+  .sidebar {
+    display: block !important;
+  }
+}
+
+.content a {
+  color: #225bf0;
+}
+
+.right-nav li.active > a {
+	color: #333;
+	font-weight: 900;
+}
+
+.right-nav {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  margin: 3rem;
+  margin-top: 5rem;
+  padding-left: 1rem;
+  border-left: 1px solid #efefef;
+  font-size: 0.9rem;
+  z-index: 100;
+}
+
+.right-nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0.3rem;
+	color: #b0aeae;
+	transition: all 50ms ease-in-out;
+}
+
+.right-nav a:hover,
+.right-nav a:focus {
+	color: #666;
+}
+
+.content {
+  padding: 5rem;
+  margin-top: 7rem;
+  margin-left: 17rem;
+}
+
+.docs-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #28394a;
+}
+
+.docs-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #28394a;
+  margin-top: 5rem;
+}
+
+.subtitle {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1rem;
+  color: #3a4a5d;
+  margin-top: -0.5rem;
+}
+
+.docs-feature {
+  padding: 3rem;
+}
+
+.docs-feature a {
+  color: #000;
+}
+
+.docs-feature-description {
+  font-size: 0.9rem;
+  color: #7b91ab;
+  margin-right: 2rem;
+}
+
+.docs-feature:hover > .docs-feature-description {
+  color: #000;
+}
+
+#docs-footer {
+  margin-left: 17rem;
+}
+/* ----------------- END DOCS ----------------- */

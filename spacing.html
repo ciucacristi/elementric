@@ -1,0 +1,200 @@
+<!--
+Elementric - Web UI Components
+Author: © Ciuca Cristian
+Author URL: https://www.ciucacristi.tk/
+Version: 0.1 Beta
+Demo: ciucacristi.github.io/elementric
+License: MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Elementric/css/elementric.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism-tomorrow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <title>Spacing | Elementric - Web UI Components</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.svg" class="logo" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navigationBar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="buttons.html">Components</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="introduction.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="changelog.html">Changelog</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-link">v0.1</li>
+          </ul>
+
+            <div class="socials">
+              <a href="https://github.com/ciucacristi/elementric"><i class="fab fa-github"></i></a>
+              <a href="https://discord.gg/GvVQvRj"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+      </div>
+  </nav>
+  <!-- END Navbar -->
+
+  <!-- Left Sidebar -->
+
+  <button class="home-button-light open-sidebar" onclick="openNav()"><svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+ </svg></button>
+
+ <div class="container-full" id="introduction">
+
+  <div class="sidebar">
+    <button class="home-button-light close-sidebar" onclick="closeNav()"><svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+     <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+   </svg></button>
+
+    <ul class="sidebar-menu">
+      <li class="menu-title"><a href="introduction.html">Getting Started</a></li>
+        <li class="menu-link"><a href="introduction.html">Introduction</a></li>
+        <li class="menu-link"><a href="installation.html">Installation</a></li>
+
+      <li class="menu-title"><a href="buttons.html">Components</a></li>
+        <li class="menu-link"><a href="buttons.html">Buttons</a></li>
+        <li class="menu-link"><a href="alerts.html">Alerts</a></li>
+        <li class="menu-link"><a href="input.html">Input</a></li>
+        <li class="menu-link"><a href="dropdown.html">Dropdown</a></li>
+        <li class="menu-link"><a href="navbar.html">Navbar</a></li>
+        <li class="menu-link"><a href="sidebar.html">Sidebar</a></li>
+        <li class="menu-link"><a href="badge.html">Badge</a></li>
+        <li class="menu-link"><a href="card.html">Card</a></li>
+        <li class="menu-link"><a href="tooltips.html">Tooltips</a></li>
+        <li class="menu-link"><a href="testimonials.html">Testimonials</a></li>
+        <li class="menu-link"><a href="pricing-tables.html">Pricing Tables</a></li>
+
+      <li class="menu-title"><a href="sizing.html">Other</a></li>
+        <li class="menu-link"><a href="sizing.html">Sizing</a></li>
+        <li class="menu-link active"><a href="spacing.html">Spacing</a></li>
+        <li class="menu-link"><a href="fonts.html">Fonts</a></li>
+        <li class="menu-link"><a href="icons.html">Icons</a></li>
+
+    </ul>
+  </div>
+
+  <!-- End Left Sidebar -->
+
+  <!-- Right Nav -->
+<!--
+<nav class="right-nav" id="right-nav">
+  <ul>
+    <li><a href="#width">Margins</a></li>
+ </ul>
+</nav>
+
+-->
+<!-- End Right Nav -->
+
+<!-- Content -->
+  <div class="container-full content" id="spacing">
+    <p class="docs-main-title">Spacing Elements</p>
+    <p class="subtitle">Elementric components - just copy the HTML code of an element and paste it into your code
+       (after you read the <a href="installation.html">installation</a> guide).</p>
+
+       <p class="docs-title mt-5" id="width">Margins</p>
+       <p class="subtitle">To set a margin for an element, use the following classes:</p>
+
+       <p class="subtitle">Number values from 1 to 10 means dimensions in REM (<strong>1rem=16px</strong>)</p>
+
+        <ul>
+          <li>from <mark>.margin-top-0</mark> up to <mark>.margin-top-10</mark></li>
+          <li>from <mark>.margin-bottom-0</mark> up to <mark>.margin-bottom-10</mark></li>
+          <li>from <mark>.margin-left-0</mark> up to <mark>.margin-left-10</mark></li>
+          <li>from <mark>.margin-right-0</mark> up to <mark>.margin-right-10</mark></li>
+        </ul>
+
+        <p class="docs-title mt-5" id="width">Padding</p>
+        <p class="subtitle">To set a padding for an element, use the following classes:</p>
+
+        <p class="subtitle">Number values from 1 to 10 means dimensions in REM (<strong>1rem=16px</strong>)</p>
+
+         <ul>
+           <li>from <mark>.padding-top-0</mark> up to <mark>.padding-top-10</mark></li>
+           <li>from <mark>.padding-bottom-0</mark> up to <mark>.padding-bottom-10</mark></li>
+           <li>from <mark>.padding-left-0</mark> up to <mark>.padding-left-10</mark></li>
+           <li>from <mark>.padding-right-0</mark> up to <mark>.padding-right-10</mark></li>
+         </ul>
+
+
+   </div>
+ </div>
+
+<!-- End Content -->
+
+<!-- Footer -->
+  <div class="footer" id="docs-footer">
+
+   <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center text-lg-left">
+        <p class="footer-logo"><img src="images/logo.svg" alt="logo"> Elementric</p>
+      </div>
+
+      <div class="col-lg-6 ml-auto text-center text-lg-right align-self-center">
+        <a href="https://github.com/ciucacristi/elementric" class="mr-4">GitHub</a>
+        <a href="changelog.html" class="mr-4">Changelog</a>
+        <a href="https://github.com/ciucacristi/elementric/issues" class="mr-4">Issues</a>
+      </div>
+     </div>
+
+    <hr>
+
+    <div class="copyright">
+      <div class="row">
+        <div class="col-lg-3 text-center text-lg-left">
+          <p>Copyright © 2020 Elementric</p>
+        </div>
+        <div class="col-lg-3 text-center mx-auto">
+          <p><a href="https://github.com/ciucacristi/elementric/blob/master/LICENSE">MIT License</a></p>
+        </div>
+
+        <div class="col-lg-3 text-center">
+          <p>Made by <a href="https://www.ciucacristi.tk/">Ciuca Cristian</a></p>
+        </div>
+      </div>
+    </div>
+
+   </div>
+
+  </div>
+
+<!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <script src="Elementric/js/elementric.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  </body>
+</html>
