@@ -19,8 +19,8 @@ To use the Elementric components you have two ways to do the installation:
 
 ```HTML
 <!-- CDN links -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ciucacristi/elementric/Elementric/css/elementric.css"> <!-- CSS -->
-  <script src="https://cdn.jsdelivr.net/gh/ciucacristi/elementric/Elementric/js/elementric.js"></script> <!-- JavaScript -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ciucacristi/elementric/Elementric/css/elementric.css"> <!-- CSS -->
+<script src="https://cdn.jsdelivr.net/gh/ciucacristi/elementric/Elementric/js/elementric.js"></script> <!-- JavaScript -->
 ```
 
 ## Features
@@ -37,4 +37,4 @@ To use the Elementric components you have two ways to do the installation:
 If you meet problems in the installation or in the usage of elements, access the [Issues](https://github.com/ciucacristi/elementric/issues) section or connect to the [Discord](https://discord.gg/GvVQvRj).
 
 ## License
-© Copyright 2020 Ciuca Cristian. Code under [MIT License](https://github.com/ciucacristi/elementric/blob/master/LICENSE)
+© Copyright 2020 [Ciuca Cristian](https://www.ciucacristi.tk/). Code under [MIT License](https://github.com/ciucacristi/elementric/blob/master/LICENSE)
