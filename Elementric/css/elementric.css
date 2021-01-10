@@ -548,17 +548,17 @@ body {
 }
 
 .gradient-light {
-  background-image: linear-gradient(to right, #E4E4E4, #f4f4f4);
+  background-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .gradient-blue {
-  background-image: linear-gradient(to right, #719EC2, #A3D8EB);
+  background-image: linear-gradient(to right, #5375E6, #61a4fb 100%);
   color: #fff;
   box-shadow: 0px 10px 20px -10px #719EC2;
 }
 
 .gradient-black {
-  background-image: linear-gradient(to right, #425262, #8e969d);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   color: #fff;
   box-shadow: 0px 12px 20px -10px #303030;
 }
@@ -579,6 +579,22 @@ body {
   background-image: linear-gradient(to right, #f1daa5, #ffc29f);
   color: #ba8309;
   box-shadow: 0px 12px 20px -10px #f1daa5;
+}
+
+.gradient-blue .person-info {
+  color: #fff;
+}
+
+.gradient-black .person-info {
+  color: #fff;
+}
+
+.gradient-red .person-info {
+  color: #fff;
+}
+
+.gradient-yellow .person-info {
+  color: #000;
 }
 
 .gradient-black .closeButton {
@@ -1477,6 +1493,7 @@ select:focus {
 .person-info {
   color: #858585;
   font-size: 0.9rem;
+  font-weight: 500;
   margin: 1rem;
   margin-bottom: 2rem;
 }
